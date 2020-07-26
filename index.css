@@ -1,0 +1,104 @@
+/* Main */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    /* position: fixed; */
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+}
+
+#navbar li, a {
+    font-size: 120%;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(103, 181, 223);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#navbar a img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+#navbar nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+#navbar li :hover:not(.active) {
+    color: rgb(30, 137, 190);
+}
+
+#navbar li .active {
+    background-color: rgb(103, 181, 223);
+    color: white;
+}
+
+/* Title */
+
+#title div {
+    /* z-index: 5; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#title div h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#title {
+    background-image: url("./Images/SkytecMall.png");
+    height: 800px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title div a {
+    text-align: center;
+}
+
+#title div a img {
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+
+}
